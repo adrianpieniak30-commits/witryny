@@ -7,94 +7,91 @@
 
 <style>
     body {
-        font-family: Cambria, serif;
-        background-color: white;
-        padding: 30px;
+        font-family: Cambria, Georgia, serif;
+        background: white;
     }
 
     h1 {
+        font-family: Cambria, Georgia, serif;
+        font-size: 22pt;
+        font-weight: bold;
         text-align: center;
-        font-size: 28px;
-        color: #202033;
+        color: #222222;
+        margin-bottom: 18px;
     }
 
     table {
-        width: 85%;
-        margin: 20px auto;
+        width: 1000px;
         border-collapse: collapse;
-        border: 5px solid #0756B5;
-        text-align: center;
-        font-size: 21px;
+        table-layout: fixed;
+        margin: auto;
+        border: 5px solid #064DB5;
+        font-family: Cambria, Georgia, serif;
+        font-size: 14pt;
     }
 
     th {
-        background-color: #11112F;
-        color: white;
-        border: 2px solid #0756B5;
-        padding: 10px;
-        font-size: 22px;
+        background-color: #10102D;
+        color: #FFFFFF;
+        font-size: 14pt;
+        font-weight: bold;
+        text-align: center;
+        padding: 5px;
+        border: 1px solid #0754B5;
+        height: 48px;
     }
 
     td {
-        border: 2px solid #0756B5;
-        padding: 8px;
+        border: 1px solid #0754B5;
+        text-align: center;
+        vertical-align: middle;
+        padding: 3px;
+        height: 59px;
+        font-size: 14pt;
     }
 
-    /* Kolory kolejnych wierszy */
-    .wiersz1 {
-        background-color: #DCEAF5;
-    }
-
-    .wiersz2 {
-        background-color: #F8E2D9;
-    }
-
-    .wiersz3 {
-        background-color: #E5D9E9;
-    }
-
-    .wiersz4 {
-        background-color: #D5DDF5;
-    }
-
-    .wiersz5 {
-        background-color: #DCE5F7;
-    }
-
-    .wiersz6 {
-        background-color: #D9DDF2;
-    }
-
-    /* Kolory tekstu */
     .model {
-        color: #245A9B;
         text-align: left;
+        color: #245B9D;
+        padding-left: 8px;
     }
 
     .dpi {
-        color: #A83232;
+        color: #A83C36;
     }
 
     .waga {
-        color: #198443;
+        color: #16864B;
     }
 
     .typ {
-        color: #18834D;
+        color: #16864B;
+        text-decoration: underline;
     }
 
     .sensor {
-        color: #18834D;
+        color: #16864B;
+        text-decoration: underline;
     }
 
+    .r1 { background-color: #D9E8F3; }
+    .r2 { background-color: #F5E0D8; }
+    .r3 { background-color: #E9DCE9; }
+    .r4 { background-color: #DCE2F5; }
+    .r5 { background-color: #E0E5F5; }
+    .r6 { background-color: #DCE1F3; }
+
     tfoot td {
-        background-color: #11112F;
+        background-color: #10102D;
         color: white;
         font-weight: bold;
         font-style: italic;
         text-align: center;
-        font-size: 22px;
+        height: 31px;
+        padding: 2px;
+        font-size: 16pt;
     }
+
 </style>
 </head>
 
@@ -104,72 +101,82 @@
 
 <table>
 
-    <thead>
-        <tr>
-            <th>Model myszki</th>
-            <th>DPI max</th>
-            <th>Waga (g)</th>
-            <th>Typ<br>połączenia</th>
-            <th>Rodzaj<br>sensora</th>
-        </tr>
-    </thead>
+<colgroup>
+    <col style="width:20%">
+    <col style="width:20%">
+    <col style="width:20%">
+    <col style="width:20%">
+    <col style="width:20%">
+</colgroup>
 
-    <tbody>
-        <tr class="wiersz1">
-            <td class="model">Logitech G Pro<br>X Superlight</td>
-            <td class="dpi">25600 DPI</td>
-            <td class="waga">63 g</td>
-            <td class="typ">Bezprzewodowe</td>
-            <td class="sensor" rowspan="2">Optyczny</td>
-        </tr>
+<thead>
+<tr>
+    <th>Model myszki</th>
+    <th>DPI max</th>
+    <th>Waga (g)</th>
+    <th>Typ<br>połączenia</th>
+    <th>Rodzaj<br>sensora</th>
+</tr>
+</thead>
 
-        <tr class="wiersz2">
-            <td class="model">Razer<br>DeathAdder V3</td>
-            <td class="dpi">30000 DPI</td>
-            <td class="waga">59 g</td>
-            <td class="typ">Przewodowe</td>
-        </tr>
+<tbody>
 
-        <tr class="wiersz3">
-            <td class="model">SteelSeries<br>Rival 3</td>
-            <td class="dpi">8500 DPI</td>
-            <td class="waga">77 g</td>
-            <td class="typ">Przewodowe</td>
-            <td class="sensor">Optyczny</td>
-        </tr>
+<tr class="r1">
+    <td class="model">Logitech G Pro<br>X Superlight</td>
+    <td class="dpi">25600 DPI</td>
+    <td class="waga">63 g</td>
+    <td class="typ">Bezprzewodowe</td>
+    <td class="sensor" rowspan="2">Optyczny</td>
+</tr>
 
-        <tr class="wiersz4">
-            <td class="model">Endgame Gear<br>OP1WE</td>
-            <td class="dpi">19000 DPI</td>
-            <td class="waga">58 g</td>
-            <td class="typ">Bezprzewodowe</td>
-            <td class="sensor">Optyczny</td>
-        </tr>
+<tr class="r2">
+    <td class="model">Razer<br>DeathAdder V3</td>
+    <td class="dpi">30000 DPI</td>
+    <td class="waga">59 g</td>
+    <td class="typ">Przewodowe</td>
+</tr>
 
-        <tr class="wiersz5">
-            <td class="model">Genesis<br>Krypton 550</td>
-            <td class="dpi">10200 DPI</td>
-            <td class="waga">66 g</td>
-            <td class="typ">Przewodowe</td>
-            <td class="sensor">Optyczny</td>
-        </tr>
+<tr class="r3">
+    <td class="model">SteelSeries<br>Rival 3</td>
+    <td class="dpi">8500 DPI</td>
+    <td class="waga">77 g</td>
+    <td class="typ">Przewodowe</td>
+    <td class="sensor">Optyczny</td>
+</tr>
 
-        <tr class="wiersz6">
-            <td class="model">A4Tech Bloody<br>A70</td>
-            <td class="dpi">4000 DPI</td>
-            <td class="waga">150 g</td>
-            <td class="typ">Przewodowe</td>
-            <td class="sensor">Laserowy</td>
-        </tr>
-    </tbody>
+<tr class="r4">
+    <td class="model">Endgame Gear<br>OP1WE</td>
+    <td class="dpi">19000 DPI</td>
+    <td class="waga">58 g</td>
+    <td class="typ">Bezprzewodowe</td>
+    <td class="sensor">Optyczny</td>
+</tr>
 
-    <tfoot>
-        <tr>
-            <td colspan="5">
-                Zestawienie parametrów myszek komputerowych
-            </td>
-        </tr>
-    </tfoot>
+<tr class="r5">
+    <td class="model">Genesis<br>Krypton 550</td>
+    <td class="dpi">10200 DPI</td>
+    <td class="waga">66 g</td>
+    <td class="typ">Przewodowe</td>
+    <td class="sensor">Optyczny</td>
+</tr>
+
+<tr class="r6">
+    <td class="model">A4Tech Bloody<br>A70</td>
+    <td class="dpi">4000 DPI</td>
+    <td class="waga">150 g</td>
+    <td class="typ">Przewodowe</td>
+    <td class="sensor">Laserowy</td>
+</tr>
+
+</tbody>
+
+<tfoot>
+<tr>
+    <td colspan="5">
+        Zestawienie parametrów myszek komputerowych
+    </td>
+</tr>
+</tfoot>
 
 </table>
 
